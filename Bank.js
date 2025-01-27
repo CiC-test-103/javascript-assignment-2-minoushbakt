@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> adc675bb18bc8d8f64d8289589392a56940167c3
 // 🏦 Bank and Account System 
 // Bank Class: Manages multiple accounts
 class Bank {
@@ -8,12 +11,15 @@ class Bank {
 
     // Add methods here:
     // Example: createAccount(name, initialDeposit)
+<<<<<<< HEAD
         // Method to create a new account
     createAccount(name, initialDeposit = 0) {
         const newAccount = new Account(name, initialDeposit);
         this.accounts.push(newAccount);
         return newAccount;
     }
+=======
+>>>>>>> adc675bb18bc8d8f64d8289589392a56940167c3
 
 }
 
@@ -28,6 +34,7 @@ class Account {
     // Add methods here:
     // Example: deposit(amount) 
     // example data to be stored in transactionHistory { transactionType: 'Deposit', amount: 500 }
+<<<<<<< HEAD
         // Deposit money into the account
     deposit(amount) {
         if (amount <= 0) {
@@ -52,11 +59,17 @@ class Account {
         this.balance -= amount;
         this.transactionHistory.push({ transactionType: 'Withdrawal', amount });
     }
+=======
+
+    // Example: withdraw(amount)
+    // example data to be stored in transactionHistory { transactionType: 'Withdrawal', amount: 200 }
+>>>>>>> adc675bb18bc8d8f64d8289589392a56940167c3
 
     // Example: transfer(amount, recipientAccount)
     // example data to be stored in transactionHistory:
     // for account sending { transactionType: 'Transfer', amount: 300, to: recipientName }
     // for account recieving { transactionType: 'Received', amount: 300, from: senderName }
+<<<<<<< HEAD
     // Transfer money to another account
     transfer(amount, recipientAccount) {
         if (amount <= 0) {
@@ -76,6 +89,10 @@ class Account {
     checkBalance() {
         return this.balance;
     }
+=======
+    
+    // Example: checkBalance()
+>>>>>>> adc675bb18bc8d8f64d8289589392a56940167c3
 }
 
 //<-------------------------------DO NOT WRITE BELOW THIS LINE------------------------------>
